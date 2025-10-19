@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Deadlock — игра</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e5e7eb;
+    }
+    header {
+      background: linear-gradient(90deg, #1e40af, #2563eb);
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      background: #1e293b;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+    }
+    .card h2 {
+      margin-top: 0;
+      color: #60a5fa;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 10px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.8);
+    }
+    a {
+      color: #93c5fd;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    a:hover {
+      color: #facc15;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #111827;
+      color: #9ca3af;
+      margin-top: 20px;
+    }
+    @media(max-width: 800px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Deadlock</h1>
+    <p>Тактический командный шутер</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Об игре</h2>
+      <p>Deadlock — это динамичная командная многопользовательская игра. Игроки сражаются на картах, захватывают ключевые точки и используют уникальные способности героев. Чтобы победить, нужно не только метко стрелять, но и работать вместе с командой.</p>
+      <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1364090/header.jpg" alt="Deadlock Header">
+    </div>
+
+    <div class="card">
+      <h2>Факты</h2>
+      <ul>
+        <li>Жанр: шутер, стратегия</li>
+        <li>Онлайн-команды 5x5</li>
+        <li>Персонажи с уникальными навыками</li>
+        <li>Платформа: ПК</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Особенности</h2>
+      <p>— Разные режимы игры (захват точек, командный бой)<br> 
+         — Красивые карты и арены<br>
+         — Прокачка и кастомизация<br>
+         — Большой выбор персонажей</p>
+      <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1364090/ss_1.jpg" alt="Скриншот Deadlock">
+    </div>
+
+    <div class="card">
+      <h2>Как играть</h2>
+      <ol>
+        <li>Выберите героя.</li>
+        <li>Общайтесь с командой.</li>
+        <li>Захватывайте ключевые точки.</li>
+        <li>Используйте умения и оружие.</li>
+        <li>Побеждайте вместе!</li>
+      </ol>
+    </div>
+
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>Ссылки</h2>
+      <p><a href="https://ru.wikipedia.org/wiki/Deadlock">Википедия</a> | 
+         <a href="https://store.steampowered.com/app/1364090/Deadlock/">Steam</a></p>
+    </div>
+
+    <!-- Новая секция обратной связи -->
+    <div class="card" style="grid-column: 1 / -1;">
+      <h2>Обратная связь</h2>
+      <p>Если у вас есть вопросы или нужна помощь, свяжитесь с нашей поддержкой:</p>
+      <ul>
+        <li>📱 Телефон: <a href="tel:+77071234567">+7 (707) 123-45-67</a></li>
+        <li>📸 Instagram: <a href="https://instagram.com/deadlock_support" target="_blank">@deadlock_support</a></li>
+        <li>📧 Email: <a href="mailto:support@deadlockgame.com">support@deadlockgame.com</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <p>Сайт сделал ученик, который только учится HTML.</p>
+  </footer>
+</body>
+</html>
